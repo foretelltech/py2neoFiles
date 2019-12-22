@@ -1,0 +1,53 @@
+
+    <html>
+    <head>
+      <script type="text/javascript" src="../lib/vis/dist/vis.js"></script>
+      <link href="../lib/vis/dist/vis.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+    <div id="2d2e373e-f6ef-49fb-9012-0ad4f953c6dd"></div>
+
+    <script type="text/javascript">
+      var nodes = [{"id": 280, "label": "Brake System", "group": "c", "title": {"name": "Brake System"}}, {"id": 112, "label": "Valve Gp - Neutralizer", "group": "V", "title": {"name": "Valve Gp - Neutralizer"}}, {"id": 18, "label": "RegionD", "group": "o", "title": {"name": "RegionD"}}, {"id": 123, "label": "Hydraulic System", "group": "c", "title": {"name": "Hydraulic System"}}, {"id": 143, "label": "Pump_GP-Metering 142-3996", "group": "p", "title": {"name": "Pump_GP-Metering 142-3996"}}, {"id": 166, "label": "RegionA", "group": "o", "title": {"name": "RegionA"}}, {"id": 16, "label": "ClassPM", "group": "o", "title": {"name": "ClassPM"}}, {"id": 109, "label": "Pump_GP-Gear 142-3996", "group": "p", "title": {"name": "Pump_GP-Gear 142-3996"}}, {"id": 146, "label": "ClassCM", "group": "o", "title": {"name": "ClassCM"}}, {"id": 92, "label": "MOTOR_GP-Electric 2108-2144", "group": "o", "title": {"name": "MOTOR_GP-Electric 2108-2144"}}, {"id": 279, "label": "Frame and Body System", "group": "c", "title": {"name": "Frame and Body System"}}, {"id": 15, "label": "Pump GP-PS-B", "group": "p", "title": {"Part N": "345-9984", "Description": "Hydraulic pumps are designed precisely to work in a hydraulic system to meet prime product requirements for machine performance, reliability,operating costs and productivity", "System Schematic": "Image2URL", "Documents": "endpoints", "name": "Pump GP-PS-B", "Brand Image": "ImageURL", "Manufactured": ["Peoria,IL", "Jamestown,NY", "Fresno,CA"], "Reliability": 0.9}}, {"id": 17, "label": "RegionB", "group": "o", "title": {"name": "RegionB"}}, {"id": 107, "label": "966H Wheel Loader", "group": "o", "title": {"Series": "H-series Wheel Loader", "Description": "Hydraulic pumps are designed precisely to work in a hydraulic system to meet prime product requirements for machine performance, reliability,operating costs and productivity", "name": "966H Wheel Loader", "Brand Image": "ImageURL", "Platform Schematic": "Image2URL"}}, {"id": 282, "label": "HMU Steering Circuit", "group": "c", "title": {"name": "HMU Steering Circuit"}}, {"id": 127, "label": "Command Control Steering", "group": "c", "title": {"name": "Command Control Steering"}}, {"id": 8, "label": "Sec. Steering System", "group": "c", "title": {"Series": "H-series Wheel Loader", "Description": "Hydraulic pumps are designed precisely to work in a hydraulic system to meet prime product requirements for machine performance, reliability,operating costs and productivity", "System Schematic": "Image2URL", "name": "Sec. Steering System", "Brand Image": "ImageURL"}}, {"id": 28, "label": "Transmission", "group": "o", "title": {"name": "Transmission"}}, {"id": 93, "label": "RegionC", "group": "o", "title": {"name": "RegionC"}}, {"id": 111, "label": "Connector-Orifice", "group": "c", "title": {"name": "Connector-Orifice"}}, {"id": 7, "label": "SupplierA", "group": "p", "title": {"name": "SupplierA"}}, {"id": 30, "label": "Valve Gp - Steer", "group": "V", "title": {"name": "Valve Gp - Steer"}}, {"id": 113, "label": "SupplierB", "group": "p", "title": {"name": "SupplierB"}}, {"id": 130, "label": "Neutralizer valve", "group": "V", "title": {"name": "Neutralizer valve"}}, {"id": 142, "label": "VALVE_GP-Relief 142-3996", "group": "V", "title": {"name": "VALVE_GP-Relief 142-3996"}}, {"id": 110, "label": "RELAY_133-1727", "group": "y", "title": {"name": "RELAY_133-1727"}}, {"id": 145, "label": "Hand Metering Unit", "group": "H", "title": {"name": "Hand Metering Unit"}}, {"id": 86, "label": "Hydraulic Tank", "group": "k", "title": {"name": "Hydraulic Tank"}}, {"id": 50, "label": "SupplierC", "group": "p", "title": {"name": "SupplierC"}}, {"id": 75, "label": "Caterpillar1", "group": "E", "title": {"name": "Caterpillar1", "location": "Abuja"}}];
+      var edges = [{"from": 112, "to": 18, "label": "IS_IN"}, {"from": 143, "to": 166, "label": "IS_IN"}, {"from": 143, "to": 16, "label": "CATEGORY"}, {"from": 109, "to": 166, "label": "IS_IN"}, {"from": 109, "to": 146, "label": "CATEGORY"}, {"from": 15, "to": 17, "label": "IS_IN"}, {"from": 15, "to": 16, "label": "CATEGORY"}, {"from": 107, "to": 282, "label": "SYSTEM"}, {"from": 107, "to": 127, "label": "SYSTEM"}, {"from": 107, "to": 280, "label": "SYSTEM"}, {"from": 107, "to": 123, "label": "SYSTEM"}, {"from": 107, "to": 279, "label": "SYSTEM"}, {"from": 107, "to": 8, "label": "SYSTEM"}, {"from": 28, "to": 17, "label": "IS_IN"}, {"from": 7, "to": 15, "label": "SUPPLIES"}, {"from": 30, "to": 93, "label": "IS_IN"}, {"from": 113, "to": 112, "label": "SUPPLIES"}, {"from": 113, "to": 15, "label": "SUPPLIES"}, {"from": 282, "to": 30, "label": "SUBSYSTEM"}, {"from": 282, "to": 112, "label": "SUBSYSTEM"}, {"from": 282, "to": 28, "label": "SUBSYSTEM"}, {"from": 282, "to": 111, "label": "SUBSYSTEM"}, {"from": 282, "to": 145, "label": "SUBSYSTEM"}, {"from": 8, "to": 110, "label": "SUBSYSTEM"}, {"from": 8, "to": 143, "label": "SUBSYSTEM"}, {"from": 8, "to": 109, "label": "SUBSYSTEM"}, {"from": 8, "to": 142, "label": "SUBSYSTEM"}, {"from": 8, "to": 92, "label": "SUBSYSTEM"}, {"from": 8, "to": 130, "label": "SUBSYSTEM"}, {"from": 8, "to": 86, "label": "SUBSYSTEM"}, {"from": 8, "to": 15, "label": "SUBSYSTEM"}, {"from": 50, "to": 110, "label": "SUPPLIES"}, {"from": 50, "to": 143, "label": "SUPPLIES"}, {"from": 50, "to": 28, "label": "SUPPLIES"}, {"from": 75, "to": 107, "label": "PLATFORM"}];
+
+      var container = document.getElementById("2d2e373e-f6ef-49fb-9012-0ad4f953c6dd");
+
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+
+      var options = {
+          nodes: {
+              shape: 'dot',
+              size: 25,
+              font: {
+                  size: 14
+              }
+          },
+          edges: {
+              font: {
+                  size: 14,
+                  align: 'middle'
+              },
+              color: 'gray',
+              arrows: {
+                  to: {enabled: true, scaleFactor: 0.5}
+              },
+              smooth: {
+              enabled: false
+              }
+          },
+          physics: {
+              enabled: false
+          }
+      };
+
+      var network = new vis.Network(container, data, options);
+
+    </script>
+    </body>
+    </html>
+    
